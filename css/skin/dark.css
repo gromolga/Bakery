@@ -1,0 +1,55 @@
+/*
+COMMON VARS
+ */
+/*
+COLOR SCHEMA
+ */
+.header-carousel-slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.features {
+  background-color: #6a635d;
+  color: #fff; }
+  .features-icon {
+    background-image: url("../../img/features-sprite-dark.png"); }
+
+.h2-colored {
+  color: #fff; }
+  .h2-colored:after {
+    border-bottom: 1px solid #fff; }
+
+.products {
+  background-color: #ecebe7; }
+  .products-holder {
+    color: #fff;
+    background-color: #6a635d; }
+  .products .owl-theme .owl-dots .owl-dot {
+    color: #fff; }
+  .products .owl-nav .owl-next,
+  .products .owl-nav .owl-prev {
+    background-position: -20px -70px; }
+    .products .owl-nav .owl-next:after,
+    .products .owl-nav .owl-prev:after {
+      border-color: #fff; }
+    .products .owl-nav .owl-next:hover,
+    .products .owl-nav .owl-prev:hover {
+      background-position: -20px -70px; }
+
+.about {
+  color: #fff; }
+  .about:before {
+    background-color: #000;
+    opacity: 0.55; }
+  .about-button {
+    color: #fff;
+    border-color: #fff; }
+
+.footer {
+  background-color: #403b37; }
