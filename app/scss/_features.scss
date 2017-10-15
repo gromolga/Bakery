@@ -1,0 +1,67 @@
+.features {
+  padding: 50px 0;
+  &-container {
+    padding: 0 50px;
+    text-align: center;
+  }
+  &-palette {
+    width: 300px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 50px;
+  }
+  &-icon {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-position: 0 0;
+    &:hover {
+      background-position-y: 251px;
+    }
+    &-star {
+      background-position-x: 500px;
+      &:hover {
+        background-position-y: 254px;
+      }
+    }
+    &-team {
+      background-position-x: 250px;
+    }
+  }
+  &-text {
+    margin: 10px 0;
+    font-size: 26px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .features {
+    &-container {
+      padding: 0;
+    }
+    &-palette {
+      width: 290px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    &-container {
+      margin: 0 -10px;
+    }
+    &-palette {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .features {
+
+    &-palette {
+      width: 320px;
+    }
+  }
+}

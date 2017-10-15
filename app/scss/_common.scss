@@ -1,0 +1,116 @@
+p {
+  font: $font;
+}
+
+.h2 {
+  position: relative;
+  margin: 50px auto;
+  text-align: center;
+  font: normal 50px/90px "agaramond", serif;
+  text-transform: uppercase;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 130px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1010px;
+  position: relative;
+  &-lg {
+    width: 1170px;
+  }
+}
+
+.inline-block-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.inline-block-item {
+  display: inline-block;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+  }
+}
+
+.up-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  z-index: 2;
+  -webkit-animation: slideInLeft 4s infinite;
+  border: 2px solid $active-text-color;
+  border-radius: 30%;
+  cursor: pointer;
+  &:hover {
+    background-color: $active-text-color - #333;
+  }
+  &-icon {
+    width: 50px;
+    height: 50px;
+  }
+  &.hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 880px;
+  }
+  .up-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 740px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .wrapper {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    width: 300px;
+  }
+  .h2 {
+    font-size: 30px;
+  }
+}

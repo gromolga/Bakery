@@ -1,0 +1,63 @@
+.header-carousel-slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, $slider-overlay-opacity);
+}
+
+.features {
+  background-color: $main-bgc;
+  color: $main-txt-color;
+  &-icon {
+    background-image: url($features-sprite);
+  }
+}
+
+.h2-colored {
+  color: $main-txt-color;
+  &:after {
+    border-bottom: 1px solid $main-txt-color;
+  }
+}
+
+.products {
+  background-color: $secondary-bgc;
+  &-holder {
+    color: $main-txt-color;
+    background-color: $main-bgc;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    color: $main-txt-color;
+  }
+  .owl-nav .owl-next,
+  .owl-nav .owl-prev {
+    background-position: $bg-position-around;
+    &:after {
+      border-color: $arrow-color;
+    }
+    &:hover {
+      background-position: $bg-position-around;
+    }
+  }
+}
+
+.about {
+  color: $main-txt-color;
+  &:before {
+    background-color: $footer-overlay-color;
+    opacity: $footer-overlay-opacity;
+  }
+  &-button {
+    color: $main-txt-color;
+    border-color: $main-txt-color;
+  }
+}
+
+.footer {
+  background-color: $footer-bgc;
+}
+

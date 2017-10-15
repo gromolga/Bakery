@@ -30,8 +30,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/owl-carousel-2/owl.carousel.min.js'
+        'node_modules/jquery/dist/jquery.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -40,8 +39,7 @@ gulp.task('scripts', function() {
 
 gulp.task('css-libs', ['sass'], function() {
     return gulp.src([
-        'node_modules/owl-carousel-2/assets/owl.carousel.css',
-        'node_modules/owl-carousel-2/assets/owl.theme.default.css'
+        'node_modules/normalize.css/normalize.css'
     ])
         .pipe(concat('libs.css'))
         .pipe(cssnano())
@@ -77,6 +75,11 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
         'app/css/libs.min.css'
     ])
         .pipe(gulp.dest('dist/css'));
+
+    gulp.src([
+        'app/css/skin/*'
+    ])
+        .pipe(gulp.dest('dist/css/skin'));
 
     gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'));

@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: 'agaramond';
+  src: url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.ttf') format('truetype'),
+  url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.woff2') format('woff2'),
+  url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.woff') format('woff'),
+  url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.OTF'),
+  url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.svg#AGaramondPro-Regular') format('svg'),
+  url('../fonts/AGARAMONDPRO-REGULAR/AGARAMONDPRO-REGULAR.eot?') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'agaramond';
+  src: url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.ttf') format('truetype'),
+  url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.woff2') format('woff2'),
+  url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.woff') format('woff'),
+  url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.OTF'),
+  url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.svg#AGaramondPro-Bold') format('svg'),
+  url('../fonts/AGARAMONDPRO-BOLD/AGARAMONDPRO-BOLD.eot?') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.ttf') format('truetype'),
+  url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.woff2') format('woff2'),
+  url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.woff') format('woff'),
+  url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.OTF'),
+  url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.svg#HelveticaLTStd-Light') format('svg'),
+  url('../fonts/HELVETICALTSTD-LIGHT/HELVETICALTSTD-LIGHT.eot?') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

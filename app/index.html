@@ -2,9 +2,391 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Bakery</title>
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 </head>
 <body>
-<h1>Hello</h1>
+<header class="header">
+    <div class="header-carousel owl-carousel owl-theme">
+        <div class="item">
+            <div class="header-carousel-slide" style="background-image: url('./img/banner.jpg')"></div>
+        </div>
+        <div class="item">
+            <div class="header-carousel-slide" style="background-image: url('./img/banner-1.jpg')"></div>
+        </div>
+        <div class="item">
+            <div class="header-carousel-slide" style="background-image: url('./img/banner-2.jpg')"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top-line">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="The Bakery"><strong>The Bakery</strong></a>
+
+            <nav class="social-nav">
+                <ul class="inline-block-list">
+                    <li class="inline-block-item"><a href="#" class="social-link social-link-twitter" title="twitter">twitter</a>
+                    </li>
+                    <li class="inline-block-item"><a href="#" class="social-link social-link-instagram"
+                                                     title="instagram">instagram</a></li>
+                    <li class="inline-block-item"><a href="mailto:john.doe@example.com"
+                                                     class="social-link social-link-letter" title="send mail">mail</a>
+                    </li>
+                    <li class="inline-block-item"><a href="tel:+39999999999" class="social-link social-link-phone"
+                                                     title="call">phone</a></li>
+                </ul>
+            </nav>
+
+            <div class="address inline-block-list">
+                <div class="address-item inline-block-item"><a
+                        href="https://www.google.com.ua/maps/place/%D0%BC%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD+%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@50.0058022,36.2287379,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0e07d03fb7b:0xfd6e279213091b80!8m2!3d50.0057988!4d36.2309266"
+                        class="social-link" target="_blank" title="find us on the google map">target</a></div>
+                <div class="address-item inline-block-item"><p>Ginger Ave 1, Gingertown, GNGR<br>Monday - Sunday: 8 am -
+                    9 pm</p></div>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="inline-block-list nav-list">
+                <li class="inline-block-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="inline-block-item"><a href="#product-tab-bread" class="nav-link" data-tab="true">Breads</a>
+                </li>
+                <li class="inline-block-item"><a href="#product-tab-desserts" class="nav-link"
+                                                 data-tab="true">Deserts</a></li>
+                <li class="inline-block-item"><a href="#product-tab-pies" class="nav-link" data-tab="true">Pies</a></li>
+                <li class="inline-block-item"><a href="#about-us" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="banner-text">
+            <div class="banner-text-holder">
+                <h1 class="h1">Unspeakably Good</h1>
+                <div class="color-scheme">
+                    <span>Color scheme:</span>
+                    <strong class="pointer active" data-schema="light">Light</strong>
+                    <strong class="pointer" data-schema="dark">Dark</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<section class="features" id="features">
+    <div class="wrapper">
+        <h2 class="h2 h2-colored">Made with love</h2>
+        <ul class="inline-block-list features-container">
+            <li class="inline-block-item features-palette">
+                <div class="features-icon features-icon-bread"></div>
+                <p class="features-text">Best quality</p>
+            </li>
+            <li class="inline-block-item features-palette">
+                <div class="features-icon features-icon-star"></div>
+                <p class="features-text">Great experience</p>
+            </li>
+            <li class="inline-block-item features-palette">
+                <div class="features-icon features-icon-team"></div>
+                <p class="features-text">Professional<br> team</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="products">
+    <div class="wrapper wrapper-lg">
+        <h2 class="h2">Our Products</h2>
+        <div class="products-holder">
+            <div class="products-category clearfix">
+                <ul class="inline-block-list products-category-list">
+                    <li class="inline-block-item products-category-title">Categories:</li>
+                    <li class="inline-block-item products-category-tab active">Bread</li>
+                    <li class="inline-block-item products-category-tab">Desserts</li>
+                    <li class="inline-block-item products-category-tab">Pies</li>
+                </ul>
+            </div>
+            <div class="products-tabs">
+                <div class="products-tab active" id="product-tab-bread">
+                    <div class="products-tab-carousel owl-carousel owl-theme clearfix">
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-tab" id="product-tab-desserts">
+                    <div class="products-tab-carousel owl-carousel owl-theme clearfix">
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-tab" id="product-tab-pies">
+                    <div class="products-tab-carousel owl-carousel owl-theme clearfix">
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Baguette</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/bread.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well. If the dough seems a little stiff, add 1-2 tbsp
+                                    water, mix well then tip onto a lightly floured work surface and knead. Once the
+                                    dough is satin-smooth, place it in a lightly oiled bowl</p>
+                                <p><span>Calories:</span><span>130</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Saturated Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                        <div class="products-item clearfix" data-dot="<p>Bagel</p>">
+                            <div class="products-item-img-holder">
+                                <img class="products-item-img" src="./img/breads.png" alt="bread">
+                            </div>
+                            <div class="products-item-content">
+                                <h5 class="products-item-title">Simple Crusty Bread</h5>
+                                <p>Mix the flour, salt and yeast in a large bowl. Make a well in the centre, then add
+                                    the oil and water, and mix well</p>
+                                <p><span>Calories:</span><span>50</span></p>
+                                <p><span>Total Fat:</span><span>1.5 grams</span></p>
+                                <p><span>Total Carbohydrates:</span><span>25 grams</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about-us">
+    <div class="wrapper">
+        <h2 class="h2 h2-colored">About Us</h2>
+        <div class="about-content">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="about-button-holder">
+            <button type="button" id="contact-us" class="about-button">Contact Us</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="top-line">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="The Bakery"><strong>The Bakery</strong></a>
+
+            <nav class="social-nav">
+                <ul class="inline-block-list">
+                    <li class="inline-block-item"><a href="#" class="social-link social-link-twitter" title="twitter">twitter</a>
+                    </li>
+                    <li class="inline-block-item"><a href="#" class="social-link social-link-instagram"
+                                                     title="instagram">instagram</a></li>
+                    <li class="inline-block-item"><a href="mailto:john.doe@example.com"
+                                                     class="social-link social-link-letter" title="send mail">mail</a>
+                    </li>
+                    <li class="inline-block-item"><a href="tel:+39999999999" class="social-link social-link-phone"
+                                                     title="call">phone</a></li>
+                </ul>
+            </nav>
+
+            <div class="address inline-block-list">
+                <div class="address-item inline-block-item"><a
+                        href="https://www.google.com.ua/maps/place/%D0%BC%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD+%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2,+%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@50.0058022,36.2287379,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0e07d03fb7b:0xfd6e279213091b80!8m2!3d50.0057988!4d36.2309266"
+                        class="social-link" target="_blank" title="find us on the google map">target</a></div>
+                <div class="address-item inline-block-item"><p>Ginger Ave 1, Gingertown, GNGR<br>Monday - Sunday: 8 am -
+                    9 pm</p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="contact-us-popup" class="popup">
+    <div class="popup-form-holder">
+        <span id="popup-close" class="popup-close"></span>
+        <form class="popup-form" action="/" method="POST">
+            <h3 class="popup-form-title">Contact Us</h3>
+            <div class="popup-form-control">
+                <input class="popup-form-input" type="text" placeholder="Name" required>
+            </div>
+            <div class="popup-form-control">
+                <input class="popup-form-input" type='tel' pattern='[\+]\d{1}[\(]\d{3}[\)]\d{2}[\-]\d{2}[\-]\d{3}'
+                       title='Phone Number (Format: +3(099)12-34-567)' placeholder="Phone number" required>
+            </div>
+            <div class="popup-form-control">
+                <input class="popup-form-input" type="text" placeholder="Subject" required>
+            </div>
+            <div class="about-button-holder ">
+                <button type="submit" class="about-button about-button-colored">Call Me Back</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="up-button" class="up-button">
+    <img class="up-button-icon" src="./img/arrow-up.svg" alt="up">
+</div>
+<script>
+    // put configs here
+    var app = {
+        darkUrl: './css/skin/dark.css'
+    }
+</script>
+<script src="./js/main.js"></script>
 </body>
 </html>
